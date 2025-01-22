@@ -572,3 +572,61 @@ article a:hover {
 .app-description .btn:hover {
     background-color: #16a085;
 }
+
+.support {
+    margin: 40px 0;
+    text-align: center;
+}
+
+.support h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.support form {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.support form label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 10px;
+    text-align: left;
+}
+
+.support form input,
+.support form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.support form textarea {
+    resize: vertical;
+    min-height: 150px;
+}
+
+.support form button {
+    background-color: #1abc9c;
+    color: #fff;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.support form button:hover {
+    background-color: #16a085;
+}
