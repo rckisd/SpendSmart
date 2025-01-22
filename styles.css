@@ -630,3 +630,116 @@ article a:hover {
 .support form button:hover {
     background-color: #16a085;
 }
+
+.about {
+    margin: 40px 0;
+    text-align: center;
+}
+
+.about h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.about p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    margin-bottom: 20px;
+}
+
+.about-image {
+    margin-top: 30px;
+    text-align: center;
+}
+
+.about-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    max-height: 400px;
+}
+
+/* Стили для переключателя темы */
+.theme-toggle {
+    display: none; /* Скрываем чекбокс */
+}
+
+.theme-toggle-label {
+    position: absolute; /* Фиксируем кнопку на экране */
+    top: 10px; /* Уменьшаем отступ сверху */
+    right: 10px; /* Уменьшаем отступ справа */
+    cursor: pointer;
+    background-color: #1abc9c;
+    color: #fff;
+    padding: 6px 12px; /* Уменьшаем отступы внутри кнопки */
+    border-radius: 5px;
+    font-size: 0.9rem; /* Уменьшаем размер текста */
+    z-index: 1000; /* Чтобы кнопка была поверх других элементов */
+    transition: background-color 0.3s ease;
+}
+
+.theme-toggle-label:hover {
+    background-color: #16a085; /* Цвет при наведении */
+}
+
+/* Тёмная тема */
+#theme-toggle:checked ~ .page-wrapper {
+    background-color: #2d2d2d; /* Тёмный фон для всей страницы */
+    color: #ffffff; /* Белый текст */
+}
+
+#theme-toggle:checked ~ .page-wrapper header,
+#theme-toggle:checked ~ .page-wrapper footer {
+    background-color: #000000; /* Чёрный фон для шапки и подвала */
+    color: #ffffff; /* Белый текст */
+}
+
+#theme-toggle:checked ~ .page-wrapper h1,
+#theme-toggle:checked ~ .page-wrapper h2,
+#theme-toggle:checked ~ .page-wrapper h3,
+#theme-toggle:checked ~ .page-wrapper p,
+#theme-toggle:checked ~ .page-wrapper a {
+    color: #ffffff; /* Белый цвет для текста и ссылок */
+}
+
+#theme-toggle:checked ~ .page-wrapper .hero h1 {
+    color: #ffffff; /* Белый цвет для заголовка в секции hero */
+}
+
+#theme-toggle:checked ~ .page-wrapper .tip,
+#theme-toggle:checked ~ .page-wrapper .tool,
+#theme-toggle:checked ~ .page-wrapper article {
+    background-color: #1e1e1e; /* Тёмный фон для плашек */
+    color: #ffffff; /* Белый текст */
+    border-color: #1abc9c; /* Цвет границы */
+}
+
+#theme-toggle:checked ~ .page-wrapper .btn {
+    background-color: #555; /* Тёмный фон для кнопок */
+    color: #ffffff; /* Белый текст */
+    border-color: #1abc9c; /* Цвет границы */
+}
+
+#theme-toggle:checked ~ .page-wrapper .btn:hover {
+    background-color: #777; /* Цвет кнопки при наведении */
+}
+
+#theme-toggle:checked ~ .page-wrapper img {
+    filter: brightness(0.8); /* Затемнение изображений */
+}
+
+#theme-toggle:checked ~ .page-wrapper .social-icons a {
+    color: #1abc9c; /* Цвет иконок соцсетей */
+}
+
+#theme-toggle:checked ~ .page-wrapper .social-icons a:hover {
+    color: #ffffff; /* Цвет иконок при наведении */
+}
+
+/* Тёмная тема: текст в плашках на главной странице */
+#theme-toggle:checked ~ .page-wrapper .tip-expanded h3,
+#theme-toggle:checked ~ .page-wrapper .tip-expanded p {
+    color: #000000; /* Чёрный цвет для текста внутри плашек */
+}
