@@ -1,0 +1,46 @@
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Форма заявки</title>
+    <link rel="stylesheet" href="contact-form.css">
+</head>
+<body>
+    <section class="contact-form-section">
+        <h1 class="form-title">
+            Свяжитесь
+            <br>
+            с нами
+        </h1>
+        <form class="contact-form">
+            <div class="form-row">
+                <input type="text" name="name" placeholder="Ваше ФИО" class="form-input" required>
+                <input type="text" name="company" placeholder="Компания" class="form-input company-input">
+            </div>
+            <div class="form-row">
+                <input type="tel" name="phone" placeholder="Телефон" class="form-input" required>
+                <input type="email" name="email" placeholder="Электронная почта" class="form-input email-input" required>
+            </div>
+            <div class="form-row">
+                <textarea name="message" placeholder="Вопрос или комментарий" class="form-textarea"></textarea>
+            </div>
+            <div class="form-row checkbox-row">
+                <label class="form-checkbox">
+                    <input type="checkbox" name="consent" required>
+                    <span class="checkbox-text">Даю согласие на обработку персональных данных</span>
+                </label>
+            </div>
+            <div class="form-row">
+                <button type="submit" class="form-submit-button">
+                    <span>Отправить заявку</span>
+                </button>
+            </div>
+        </form>
+        <p class="form-footer">
+            Защита от спама reCAPTCHA — 
+            <a href="#" class="footer-link">Конфиденциальность</a> и 
+            <a href="#" class="footer-link">Условия использования</a>.
+        </p>
+    </section>
+</body>
+</html>
