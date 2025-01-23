@@ -313,7 +313,7 @@ footer {
 }
 
 .video-container {
-    max-width: 100%;
+    max-width: 50%;
     margin: 0 auto;
     padding: 20px;
     background-color: #ecf0f1;
