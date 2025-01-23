@@ -1,3 +1,8 @@
+/* Выведенное предупреждение на валидаторе: Этот документ, по-видимому, написан на английском языке. Подумайте о том, чтобы добавить lang="en" (или вариант) в начальный тег html (добавлен, ошибка остётся).*/
+/* Выведенная ошибка на валидаторе: Ожидается <!DOCTYPE html> (добавлен, ошибка остаётся)*/
+/* Выведенная ошибка на валидаторе: В заголовке элемента отсутствует обязательный экземпляр title дочернего элемента (добавлен, ошибка остаётся)*/
+
+
 :root {
     --primary-color: #1abc9c;
     --secondary-color: #2c3e50;
@@ -661,39 +666,37 @@ article a:hover {
     max-height: 400px;
 }
 
-/* Стили для переключателя темы */
 .theme-toggle {
-    display: none; /* Скрываем чекбокс */
+    display: none;
 }
 
 .theme-toggle-label {
-    position: absolute; /* Фиксируем кнопку на экране */
-    top: 10px; /* Уменьшаем отступ сверху */
-    right: 10px; /* Уменьшаем отступ справа */
+    position: absolute;
+    top: 10px;
+    right: 10px;
     cursor: pointer;
     background-color: #1abc9c;
     color: #fff;
-    padding: 6px 12px; /* Уменьшаем отступы внутри кнопки */
+    padding: 6px 12px;
     border-radius: 5px;
-    font-size: 0.9rem; /* Уменьшаем размер текста */
-    z-index: 1000; /* Чтобы кнопка была поверх других элементов */
+    font-size: 0.9rem;
+    z-index: 1000;
     transition: background-color 0.3s ease;
 }
 
 .theme-toggle-label:hover {
-    background-color: #16a085; /* Цвет при наведении */
+    background-color: #16a085;
 }
 
-/* Тёмная тема */
 #theme-toggle:checked ~ .page-wrapper {
-    background-color: #2d2d2d; /* Тёмный фон для всей страницы */
-    color: #ffffff; /* Белый текст */
+    background-color: #2d2d2d;
+    color: #ffffff;
 }
 
 #theme-toggle:checked ~ .page-wrapper header,
 #theme-toggle:checked ~ .page-wrapper footer {
-    background-color: #000000; /* Чёрный фон для шапки и подвала */
-    color: #ffffff; /* Белый текст */
+    background-color: #000000;
+    color: #ffffff;
 }
 
 #theme-toggle:checked ~ .page-wrapper h1,
@@ -701,45 +704,265 @@ article a:hover {
 #theme-toggle:checked ~ .page-wrapper h3,
 #theme-toggle:checked ~ .page-wrapper p,
 #theme-toggle:checked ~ .page-wrapper a {
-    color: #ffffff; /* Белый цвет для текста и ссылок */
+    color: #ffffff;
 }
 
 #theme-toggle:checked ~ .page-wrapper .hero h1 {
-    color: #ffffff; /* Белый цвет для заголовка в секции hero */
+    color: #ffffff;
 }
 
 #theme-toggle:checked ~ .page-wrapper .tip,
 #theme-toggle:checked ~ .page-wrapper .tool,
 #theme-toggle:checked ~ .page-wrapper article {
-    background-color: #1e1e1e; /* Тёмный фон для плашек */
-    color: #ffffff; /* Белый текст */
-    border-color: #1abc9c; /* Цвет границы */
+    background-color: #1e1e1e;
+    color: #ffffff;
+    border-color: #1abc9c;
 }
 
 #theme-toggle:checked ~ .page-wrapper .btn {
-    background-color: #555; /* Тёмный фон для кнопок */
-    color: #ffffff; /* Белый текст */
-    border-color: #1abc9c; /* Цвет границы */
+    background-color: #555;
+    color: #ffffff;
+    border-color: #1abc9c;
 }
 
 #theme-toggle:checked ~ .page-wrapper .btn:hover {
-    background-color: #777; /* Цвет кнопки при наведении */
+    background-color: #777;
 }
 
 #theme-toggle:checked ~ .page-wrapper img {
-    filter: brightness(0.8); /* Затемнение изображений */
+    filter: brightness(0.8);
 }
 
 #theme-toggle:checked ~ .page-wrapper .social-icons a {
-    color: #1abc9c; /* Цвет иконок соцсетей */
+    color: #1abc9c;
 }
 
 #theme-toggle:checked ~ .page-wrapper .social-icons a:hover {
-    color: #ffffff; /* Цвет иконок при наведении */
+    color: #ffffff;
 }
 
-/* Тёмная тема: текст в плашках на главной странице */
 #theme-toggle:checked ~ .page-wrapper .tip-expanded h3,
 #theme-toggle:checked ~ .page-wrapper .tip-expanded p {
-    color: #000000; /* Чёрный цвет для текста внутри плашек */
+    color: #000000;
+}
+
+header {
+    position: relative;
+    background-color: #2c3e50;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+.logo {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    z-index: 1000;
+}
+
+.logo-image {
+    height: 150px;
+    width: auto;
+    transition: transform 0.3s ease;
+}
+
+.logo-image:hover {
+    transform: scale(1.1);
+}
+
+.header-content {
+    margin-top: 20px;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+    margin: 20px 0 0;
+    gap: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #1abc9c;
+}
+
+.theme-toggle-label {
+    cursor: pointer;
+    color: #fff;
+    padding: 5px 10px;
+    border: 2px solid transparent;
+    transition: border-color 0.3s ease;
+}
+
+.theme-toggle-label:hover {
+    border-color: #1abc9c;
+}
+
+/* Адаптивность для iPad Mini (768x1024) */
+@media (min-width: 768px) and (max-width: 1024px) {
+    header h1 {
+        font-size: 2.2rem;
+    }
+
+    header p {
+        font-size: 1.1rem;
+    }
+
+    nav ul {
+        gap: 15px;
+    }
+
+    nav ul li a {
+        padding: 8px 12px;
+    }
+
+    .hero h2 {
+        font-size: 3rem;
+    }
+
+    .hero p {
+        font-size: 1.5rem;
+    }
+
+    .hero .btn {
+        padding: 10px 20px;
+        font-size: 1.1rem;
+    }
+
+    .tip-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .tip {
+        min-height: 180px;
+    }
+
+    .tip-expanded {
+        padding: 30px;
+    }
+
+    .video-container iframe {
+        height: 300px;
+    }
+
+    .footer-content {
+        padding: 15px;
+    }
+
+    .social-icons a {
+        font-size: 1.3rem;
+    }
+}
+
+
+/* Адаптивность для iPhone 14 Pro Max (430px) */
+@media (max-width: 430px) {
+    :root {
+        --font-size: 14px;
+    }
+
+    header h1 {
+        font-size: 1.8rem;
+    }
+
+    header p {
+        font-size: 1rem;
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    nav ul li a {
+        padding: 8px;
+        display: block;
+    }
+
+    .hero {
+        padding: 60px 15px;
+    }
+
+    .hero h2 {
+        font-size: 2.5rem;
+        line-height: 1.2;
+        padding-bottom: 10px;
+    }
+
+    .hero p {
+        font-size: 1.2rem;
+    }
+
+    .tip-container {
+        grid-template-columns: 1fr;
+    }
+
+    .tip:nth-child(3) {
+        grid-column: span 1;
+    }
+
+    .tip-content,
+    .tip-expanded {
+        padding: 20px;
+    }
+
+    .video-container iframe {
+        height: 250px;
+    }
+
+    main {
+        padding: 10px;
+    }
+
+    .btn {
+        padding: 12px 24px;
+        font-size: 1rem;
+    }
+
+    .article-container,
+    .tool-grid {
+        grid-template-columns: 1fr;
+    }
+
+    h2, h3 {
+        font-size: 1.5rem;
+    }
+
+    .theme-toggle-label {
+        top: 5px;
+        right: 5px;
+        padding: 5px 10px;
+        font-size: 0.8rem;
+    }
+
+    .video-container iframe {
+        height: auto;
+        aspect-ratio: 16/9;
+    }
+
+    .tip {
+        min-height: 150px;
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.tip, .tool, article {
+    animation: fadeIn 1s ease-in-out;
 }
